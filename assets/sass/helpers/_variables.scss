@@ -5,11 +5,11 @@
 // Colors start
 
 // define your vars or override bootstrap vars
-$default: red;
-$primary: green;
-$secondary: blue;
-$alternate: cyan;
-
+$primary: #00587C;
+$secondary: #765D84;
+$grey: #373E42;
+$light-grey: #F7F7F7;
+$red: #BE0F34;
 // Typography Family
 $font-default: "Roboto", sans-serif;
 $font-primery: "Montserrat", sans-serif;
@@ -21,10 +21,31 @@ $grid-breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
-  lg: 992px,
-  xl: 1200px
+  lg: 1024px,
+  xl: 1920px
 );
 
+// Bootstrap varaibles
+$btn-border-radius-lg: 80px;
+$btn-font-size-lg: 16px;
+$btn-padding-x-lg: 25px;
+$btn-padding-y-lg: 12px;
+$btn-font-weight: 500;
+$gray-100: #F7F7F7;
+$gray-200: #C7CCCF;
+$spacer: 1.25rem;
+
+//Bootstrap theming
+$colors: (
+  "red": $red,
+  "gray": $grey,
+);
+
+$border-widths: (
+  1: 3px,
+  2: 20px,
+  3: 80px,
+);
 // ===========================================
 // -Variables end
 // ===========================================

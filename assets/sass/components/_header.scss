@@ -2,6 +2,23 @@
 // -Header start
 //===========================================
 
+.main-header {
+    height: rem(60);
+    border-bottom: rem(1) solid $gray-200;
+    padding: 0 rem(15);
+    .header-profile {
+        width: rem(35);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    i {
+        font-size: rem(26);
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
 //===========================================
 // -Header end
 //===========================================

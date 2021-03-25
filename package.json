@@ -30,7 +30,7 @@
   "license": "ISC",
   "homepage": "https://github.com/ismailfarooq/gulp-sass-starter-template#readme",
   "dependencies": {
-    "bootstrap": "^4.6.0",
+    "bootstrap": "^5.0.0-beta3",
     "jquery": "^3.5.1"
   }
 }
