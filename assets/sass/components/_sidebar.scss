@@ -6,11 +6,12 @@
     width: 0;
     height: 100vh;
     flex-shrink: 0;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     transition: 0.3s;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     @include mq('lg', max) {
         width: 250px;
     }
@@ -30,15 +31,21 @@
             border-left: rem(5) solid transparent;
             &.active {
                 border-color: $secondary;      
-                background-color: $gray-100;          
+                background-color: $gray-100;       
+                font-weight: bold;   
             }
         }
         a {
             display: flex;
+            align-items: center;
             i {
                 margin: 0 rem(15);
                 width: rem(30);
                 text-align: center;
+                font-size: rem(30);
+            }
+            span {
+                margin-bottom: rem(-3);
             }
         }
     }

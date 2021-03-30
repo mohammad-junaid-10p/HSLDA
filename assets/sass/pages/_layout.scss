@@ -23,6 +23,10 @@
   .main-section {
     height: calc(100% - #{rem(60)});
     background-color: $gray-100;
+    .main-section-container {
+      padding: rem(30);
+      padding-top: 0;
+    }
   }
   &.sidebar-expanded {
     .main-container {

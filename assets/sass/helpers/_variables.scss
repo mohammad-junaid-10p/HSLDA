@@ -7,8 +7,12 @@
 // define your vars or override bootstrap vars
 $primary: #00587C;
 $secondary: #765D84;
+$tritary: #8DB9CA;
+$success: #237328;
+$success-100: #DFF2E0;
+$neutral: #F5F9FA;
 $grey: #373E42;
-$light-grey: #F7F7F7;
+$info: #3094BF;
 $red: #BE0F34;
 // Typography Family
 $font-default: "Roboto", sans-serif;
@@ -16,29 +20,36 @@ $font-primery: "Montserrat", sans-serif;
 
 $font-path: "../fonts";
 
-// define your Break Points or override bootstrap Break Points
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 1024px,
-  xl: 1920px
-);
 
 // Bootstrap varaibles
 $btn-border-radius-lg: 80px;
+$btn-border-radius: 20px;
 $btn-font-size-lg: 16px;
 $btn-padding-x-lg: 25px;
 $btn-padding-y-lg: 12px;
 $btn-font-weight: 500;
 $gray-100: #F7F7F7;
-$gray-200: #C7CCCF;
+$gray-200: #EBEEEF;
+$gray-300: #C7CCCF;
+$badge-font-weight: normal;
+$badge-font-size: 14px;
 $spacer: 1.25rem;
 
 //Bootstrap theming
 $colors: (
   "red": $red,
   "gray": $grey,
+);
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "danger": $red,
+  "info": $info,
+  "success": $success,
+  "success-100": $success-100,
+  "gray": $grey,
+  "gray-200": $gray-200,
 );
 
 $border-widths: (

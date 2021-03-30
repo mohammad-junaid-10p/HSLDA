@@ -1,0 +1,111 @@
+.hslda-card {
+    padding: rem(20) rem(25) rem(20) rem(25);
+    border: rem(1) solid $gray-300;
+    border-top: rem(4) solid $tritary;
+    background-color: white;
+    &.secondary {
+        border-top: rem(4) solid $secondary;
+    }
+    &.accordian-card {
+        padding: rem(20) rem(25) rem(0) rem(25);
+    }
+    .card-type-box {
+        .type-icon {
+            margin-right: rem(15);
+            font-size: rem(50);
+            i {
+                height: rem(42);
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+        .type-title {
+            font-size: rem(22);
+            color: $primary;
+        }
+        .type-sub-title {
+            font-size: rem(16);
+            font-weight: 700;
+        }
+    }
+    &-header {
+        padding-bottom: rem(25);
+    }
+    &-body {
+
+    }
+    .hslda-card-footer {
+        margin: 0 rem(-25);
+        .footer-wrapper {
+            padding: rem(9.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top: rem(1) solid $gray-200;
+            cursor: pointer;
+        }
+        .icon-chevron-down {
+            font-size: rem(18);
+        }
+        .card-accordian-wrapper {
+            padding-right: rem(15);
+            padding-left: rem(15);
+            display: none;
+            &.expanded {
+                display: block;
+            }
+        }
+        &.accordian-expanded {
+            .footer-wrapper {
+                background-color: $neutral;
+                border-bottom: rem(1) solid $gray-200;
+                i {
+                    transform: rotate(180deg);
+                }
+            }
+            .card-accordian-wrapper {
+                display: block;
+            }
+        }
+    }
+}
+.hlsda-card-title {
+    min-height: rem(24);
+}
+.alert-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: rem(3) solid $red;
+    padding-left: rem(10);
+    .alert-content {
+        font-size: rem(14);
+    }
+}
+
+.card-list {
+    li {
+        padding: rem(15) 0;
+        border-top: 1px solid $gray-200;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        > div {
+            width: 100%;
+        }
+    }
+    .small {
+        font-size: rem(15);
+    }
+}
+
+.cc-details {
+    .cc-details-container {
+        display: flex;
+        align-items: center;
+    }
+    .cc-icon {
+        font-size: rem(40);
+        margin-right: rem(9);
+    }
+}
