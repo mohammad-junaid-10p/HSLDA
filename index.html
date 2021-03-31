@@ -13,6 +13,9 @@
       <aside class="main-sidebar">
         <div class="sidebar-wrapper">
           <ul class="page-links mb-3">
+            <li class="main-logo">
+              <img src="./assets/images/hslda-logo.svg" alt="">
+            </li>
             <li>
               <a href=""><i class="icon-profile-o"></i> <span>Profile</span></a>
             </li>
@@ -36,7 +39,7 @@
             <li><a href="">Compassion Grants</a></li>
           </ul>
           <div class="sidebar-btns">
-            <button class="btn btn-outline-primary btn-lg w-100">Donate</button>
+            <button class="btn btn-outline-primary btn-lg w-100 text-black fw-bold">Donate</button>
           </div>
         </div>
       </aside>
@@ -45,7 +48,7 @@
           class="main-header d-flex justify-content-between align-items-center"
         >
           <i id="toggle" class="icon-menu"></i>
-          <div class="header-logo">logo</div>
+          <div class="header-logo"><img src="./assets/images/my-hslda-logo.svg" alt=""></div>
           <div class="header-profile">
             <img src="./assets/images/user-palceholder.png" alt="" />
           </div>
@@ -55,7 +58,7 @@
             <h2 class="py-4 text-primary">Payments</h2>
             <div class="row">
               <div class="col-12 col-lg-6">
-                <h3 class="text-primary mb-4 hlsda-card-title">My scheduled payments</h3>
+                <h3 class="text-primary mb-3 hlsda-card-title">My scheduled payments</h3>
                 <div class="hslda-card pb-0">
                   <div class="hslda-card-header pb-3">
                     <div class="card-type-box d-flex align-items-center mb-3">
@@ -69,12 +72,12 @@
                         >
                       </div>
                     </div>
-                    <div class="alert-box">
-                      <div class="alert-content">
+                    <div class="alert-box flex-sm-row flex-column">
+                      <div class="alert-content mb-sm-0 mb-2 me-sm-2">
                         <h6 class="alert-tile mb-0">
                           This scheduled payment was declined.
                         </h6>
-                        <span class="alert-content">
+                        <span class="alert-text">
                           Update your payment method, add a new one, or try
                           again.
                         </span>
@@ -98,8 +101,21 @@
                           <span class="small">02/23/2021</span>
                         </div>
                         <div class="d-flex justify-content-end">
-                          <span class="badge border border-gray-200 text-gray">Upcoming</span>
+                          <span class="badge badge-outline-secondary">Upcoming</span>
                         </div>
+                      </li>
+                      <li>
+                        <div>
+                          <p class="fw-bold mb-0">Next payment:</p>
+                          <span class="small">02/23/2021</span>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                          <span class="badge badge-outline-danger">Failed</span>
+                          <a href="" class="text-gray-400 ms-2">Try Again</a href="">
+                        </div>
+                        <p class="fst-italic text-dark w-100 mt-2">
+                          Your payment will be reattempted within the next 24 hours.
+                        </p>
                       </li>
                       <li>
                         <div>
@@ -107,14 +123,14 @@
                             class="fw-bold mb-1 d-flex justify-content-between"
                           >
                             Payment method:
-                            <a class="fw-normal text-info small cursor-pointer">Change</a>
+                            <a class="fw-normal text-info small cursor-pointer" href="./update-payment.html">Change</a>
                           </p>
                           <div
                             class="cc-details d-flex justify-content-between"
                           >
                             <div class="cc-details-container">
                               <div class="cc-icon d-flex">
-                                <i class="icon-bank-account"></i>
+                                <img src="./assets/images/bank-account.svg" alt="">
                               </div>
                               <div class="cc-number">
                                 <p class="fw-bold mb-0">Mastercard</p>
@@ -125,7 +141,7 @@
                               class="cc-details d-flex justify-content-end align-items-center"
                             >
                               <span
-                                class="badge border border-danger text-danger"
+                                class="badge badge-outline-danger"
                                 >Expired</span
                               >
                             </div>
@@ -147,49 +163,49 @@
                           <div class="d-flex align-items-center">
                             <b class="me-2">10/23/2020</b>
                             <span class="me-2">$12</span>
-                            <span class="badge text-success bg-success-100">Paid</span>
+                            <span class="badge badge-outline-success">Paid</span>
                           </div>
                         </li>
                         <li>
                           <div class="d-flex align-items-center">
                             <b class="me-2">10/23/2020</b>
                             <span class="me-2">$12</span>
-                            <span class="badge text-success bg-success-100">Paid</span>
+                            <span class="badge badge-outline-success">Paid</span>
                           </div>
                         </li>
                         <li>
                           <div class="d-flex align-items-center">
                             <b class="me-2">10/23/2020</b>
                             <span class="me-2">$12</span>
-                            <span class="badge text-success bg-success-100">Paid</span>
+                            <span class="badge badge-outline-success">Paid</span>
                           </div>
                         </li>
                         <li>
                           <div class="d-flex align-items-center">
                             <b class="me-2">10/23/2020</b>
                             <span class="me-2">$12</span>
-                            <span class="badge border border-gray-200 text-gray">Upcoming</span>
+                            <span class="badge badge-outline-secondary">Upcoming</span>
                           </div>
                         </li>
                         <li>
                           <div class="d-flex align-items-center">
                             <b class="me-2">10/23/2020</b>
                             <span class="me-2">$12</span>
-                            <span class="badge border border-gray-200 text-gray">Upcoming</span>
+                            <span class="badge badge-outline-secondary">Upcoming</span>
                           </div>
                         </li>
                         <li>
                           <div class="d-flex align-items-center">
                             <b class="me-2">10/23/2020</b>
                             <span class="me-2">$12</span>
-                            <span class="badge border border-gray-200 text-gray">Upcoming</span>
+                            <span class="badge badge-outline-secondary">Upcoming</span>
                           </div>
                         </li>
                         <li>
                           <div class="d-flex align-items-center">
                             <b class="me-2">10/23/2020</b>
                             <span class="me-2">$12</span>
-                            <span class="badge border border-gray-200 text-gray">Upcoming</span>
+                            <span class="badge badge-outline-secondary">Upcoming</span>
                           </div>
                         </li>
                       </ul>
@@ -198,7 +214,7 @@
                 </div>
               </div>
               <div class="col-12 col-lg-6">
-                <h3 class="text-primary mb-4 hlsda-card-title"></h3>
+                <h3 class="text-primary mb-3 hlsda-card-title"></h3>
                 <div class="hslda-card secondary pb-0">
                   <div class="hslda-card-header pb-3">
                     <div class="card-type-box d-flex align-items-center mb-1">
@@ -206,10 +222,8 @@
                         <i class="icon-donation text-secondary"></i>
                       </div>
                       <div class="d-flex flex-column">
-                        <h5 class="type-title mb-0">HSLDA Membership</h5>
-                        <span class="type-sub-title"
-                          >Monthly auto-pay (1 year)</span
-                        >
+                        <h5 class="type-title mb-0">HSLDA Donation</h5>
+                        <span class="type-sub-title">Children of Single Parents fund</span>
                       </div>
                     </div>
                   </div>
@@ -227,7 +241,7 @@
                           <span class="small">02/23/2021</span>
                         </div>
                         <div class="d-flex justify-content-end">
-                          <span class="badge border border-gray-200 text-gray">Upcoming</span>
+                          <span class="badge badge-outline-secondary">Upcoming</span>
                         </div>
                       </li>
                       <li>
@@ -236,14 +250,14 @@
                             class="fw-bold mb-1 d-flex justify-content-between"
                           >
                             Payment method:
-                            <a class="fw-normal text-info small cursor-pointer">Change</a>
+                            <a class="fw-normal text-info small cursor-pointer" href="./update-payment.html">Change</a>
                           </p>
                           <div
                             class="cc-details d-flex justify-content-between"
                           >
                             <div class="cc-details-container">
                               <div class="cc-icon d-flex">
-                                <i class="icon-bank-account"></i>
+                                <img src="./assets/images/credit-card-mastercard.svg" alt="">
                               </div>
                               <div class="cc-number">
                                 <p class="fw-bold mb-0">Mastercard</p>
@@ -254,7 +268,7 @@
                               class="cc-details d-flex justify-content-end align-items-center"
                             >
                               <span
-                                class="badge border border-danger text-danger"
+                                class="badge badge-outline-danger"
                                 >Expired</span
                               >
                             </div>
@@ -279,4 +293,5 @@
     </div>
   </body>
   <script src="./assets/dist/script.js"></script>
+  <script src="./assets/dist/bootstrap.js"></script>
 </html>

@@ -1,0 +1,50 @@
+//  Override bootstrap vars
+
+$btn-border-radius-lg: rem(80);
+$btn-border-radius: rem(20);
+$btn-font-size-lg: rem(16);
+$btn-padding-x-lg: rem(25);
+$btn-padding-y-lg: rem(12);
+$btn-font-weight: 500;
+$gray-100: #f7f7f7;
+$gray-200: #ebeeef;
+$gray-300: #c7cccf;
+$gray-400: #a2a9ad;
+$border-radius: rem(3);
+$badge-font-weight: normal;
+$badge-font-size: rem(14);
+$spacer: rem(20);
+$grid-gutter-width: rem(24);
+$form-check-input-checked-color: $info;
+$form-check-input-checked-bg-color: white;
+$form-check-input-checked-border-color: $gray-300;
+$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2.8' fill='#{$form-check-input-checked-color}'/></svg>");
+$input-border-color: $gray-300;
+$form-label-font-weight: 700;
+$form-label-font-size: rem(15);
+$form-label-margin-bottom: rem(5);
+$form-label-color: $dark;    
+//Bootstrap theming
+$colors: (
+  "red": $red,
+  "gray": $dark,
+);
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "danger": $red,
+  "info": $info,
+  "success": $success,
+  "success-100": $success-100,
+  "gray-200": $gray-200,
+  "gray-400": $gray-400,
+  "dark": $dark,
+  "black": black,
+);
+
+$border-widths: (
+  1: 3px,
+  2: 20px,
+  3: 80px,
+);

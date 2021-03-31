@@ -2,6 +2,22 @@
 // -Forms Start
 //===========================================
 
+.form-check-input {
+    min-width: rem(16);
+    min-height: rem(16);
+}
+
+.form-seprator {
+    background: $gray-200;
+    opacity: 1;
+}
+
+.form-btn {
+    button {
+        min-height: rem(40);
+    }
+}
+
 //===========================================
 // -Forms end
 //===========================================

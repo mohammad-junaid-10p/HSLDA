@@ -12,6 +12,10 @@
         align-items: center;
         justify-content: center;
     }
+    .header-logo {
+        width: rem(128);
+        margin-top: rem(10);
+    }
     i {
         font-size: rem(30);
         color: $primary;

@@ -9,6 +9,9 @@
     &.accordian-card {
         padding: rem(20) rem(25) rem(0) rem(25);
     }
+    &.tab-pane {
+        border-top: none;
+    }
     .card-type-box {
         .type-icon {
             margin-right: rem(15);
@@ -22,6 +25,7 @@
         .type-title {
             font-size: rem(22);
             color: $primary;
+            font-weight: normal;
         }
         .type-sub-title {
             font-size: rem(16);
@@ -76,22 +80,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-left: rem(3) solid $red;
-    padding-left: rem(10);
     .alert-content {
         font-size: rem(14);
+        border-left: rem(3) solid $red;
+        padding-left: rem(10);
     }
 }
 
 .card-list {
+    &.small {
+        li {
+        }
+    }
     li {
         padding: rem(15) 0;
         border-top: 1px solid $gray-200;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         > div {
-            width: 100%;
+            flex: 1;
         }
     }
     .small {
@@ -105,7 +114,58 @@
         align-items: center;
     }
     .cc-icon {
-        font-size: rem(40);
         margin-right: rem(9);
+        width: rem(39);
+    }
+}
+
+.badge {
+    &.badge-outline-primary {
+        border: rem(1) solid $primary;
+        color: $primary;
+    }
+    &.badge-outline-secondary {
+        border: rem(1) solid $gray-200;
+        color: $dark;
+    }
+    &.badge-outline-danger {
+        border: rem(1) solid $red;
+        color: $red;
+    }
+    &.badge-outline-success {
+        background-color: $success-100;
+        color: $success;
+    }
+}
+
+.add-method {
+    display: flex;
+    align-items: center;
+    i {
+        font-size: rem(20);
+    }
+}
+
+.nav-tabs {
+    .nav-item {
+        flex: 1;
+        .nav-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: rem(25) rem(50);
+            width: 100%;
+            height: rem(80);
+            border-radius: 0;
+            &.active {
+                border-top: rem(4) solid $tritary;
+            }
+        }
+        img {
+            width: rem(50);
+        }
+        i {
+            font-size: rem(40);
+        }
     }
 }

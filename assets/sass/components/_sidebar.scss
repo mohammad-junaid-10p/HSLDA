@@ -23,6 +23,13 @@
         color: black;
     }
     .page-links {
+        .main-logo {
+            margin-top: rem(3);
+            img {
+                width: rem(150);
+                margin-left: rem(15);
+            }
+        }
         li {
             height: rem(60);
             font-size: rem(18);

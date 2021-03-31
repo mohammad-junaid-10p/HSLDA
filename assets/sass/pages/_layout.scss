@@ -26,6 +26,10 @@
     .main-section-container {
       padding: rem(30);
       padding-top: 0;
+      @include mq('lg', max) {
+        padding: rem(14);
+        padding-top: 0;
+      }
     }
   }
   &.sidebar-expanded {
