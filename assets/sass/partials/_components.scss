@@ -128,6 +128,10 @@
         border: rem(1) solid $gray-200;
         color: $dark;
     }
+    &.badge-outline-tritary {
+        color: $dark;
+        background: $gray-200;
+    }
     &.badge-outline-danger {
         border: rem(1) solid $red;
         color: $red;
@@ -167,5 +171,16 @@
         i {
             font-size: rem(40);
         }
+    }
+}
+
+.not-found {
+    padding: rem(25) rem(15);
+    background: white;
+    p {
+        font-family: $font-primery;
+        font-style: italic;
+        margin: 0;
+        color: $gray-500;
     }
 }
