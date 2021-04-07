@@ -44,6 +44,9 @@ img {
   display: block;
 }
 
+a {
+  color: $info;
+}
 // Remove list styles on ul, ol elements with a class attribute
 ul[class],
 ol[class] {
@@ -73,8 +76,11 @@ h3 {
   font-size: rem(24);
   font-weight: 400;
 }
+h4 {
+  font-size: rem(22);
+}
 h5 {
-  font-size: rem(16);
+  font-size: rem(18);
 }
 h6 {
   font-size: rem(15);

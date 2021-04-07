@@ -39,7 +39,7 @@
             <li><a href="">Compassion Grants</a></li>
           </ul>
           <div class="sidebar-btns">
-            <button class="btn btn-outline-primary btn-lg w-100 text-black fw-bold">Donate</button>
+            <button class="btn btn-tritary btn-lg w-100">Donate</button>
           </div>
         </div>
       </aside>
@@ -123,7 +123,7 @@
                             class="fw-bold mb-1 d-flex justify-content-between"
                           >
                             Payment method:
-                            <a class="fw-normal text-info small cursor-pointer" href="./update-payment.html">Change</a>
+                            <a class="fw-normal  small cursor-pointer" href="./update-payment.html">Change</a>
                           </p>
                           <div
                             class="cc-details d-flex justify-content-between"
@@ -250,7 +250,7 @@
                             class="fw-bold mb-1 d-flex justify-content-between"
                           >
                             Payment method:
-                            <a class="fw-normal text-info small cursor-pointer" href="./update-payment.html">Change</a>
+                            <a class="fw-normal  small cursor-pointer" href="./update-payment.html">Change</a>
                           </p>
                           <div
                             class="cc-details d-flex justify-content-between"
@@ -278,7 +278,7 @@
                     </ul>
                   </div>
                   <div class="hslda-card-footer">
-                    <div class="footer-wrapper" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="footer-wrapper" data-bs-toggle="modal" data-bs-target="#donationModal">
                       <p class="text-primary mb-0 d-flex align-items-center">
                        Cancel donation
                       </p>
@@ -291,15 +291,15 @@
         </section>
       </div>
     </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
+    <div class="modal fade alert-modal" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-body">
-            ...
+            <h4 class="mb-0">Are you sure you want to cancel this recurring donation?</h4>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+          <div class="modal-footer d-flex justify-content-between">
+            <button class="btn" data-bs-dismiss="modal"><a href="" class="">Go back</a></button>
+            <button class="btn btn-danger">Cancel donation</button>
           </div>
         </div>
       </div>

@@ -10,6 +10,9 @@
 .form-seprator {
     background: $gray-200;
     opacity: 1;
+    &.dark {
+        background: $gray-300;
+    }
 }
 
 .form-btn {
@@ -17,7 +20,19 @@
         min-height: rem(40);
     }
 }
-
+form {
+    p {
+        color: $gray-500;
+    }
+}
+.form-control {
+    &.is-invalid {
+        background-size: rem(13);
+    }
+    &.is-valid {
+        background-size: rem(15);
+    }
+}
 //===========================================
 // -Forms end
 //===========================================

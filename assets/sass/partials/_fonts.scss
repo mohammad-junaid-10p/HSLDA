@@ -2,136 +2,139 @@
 // -Fonts start
 //===========================================
 
-@include font-face("family", $font-path, "Roboto-Regular", 400, "normal");
+/* Foro Sans fonts */
 
 $icomoon-font-family: "icomoon" !default;
 $icomoon-font-path: "./../fonts" !default;
 
 [class^="icon-"],
 [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: "#{$icomoon-font-family}" !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "#{$icomoon-font-family}" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 // Icomoon Icon Font
 
 @font-face {
-    font-family: "#{$icomoon-font-family}";
-    src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?pzi19m") format("truetype"),
-        url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?pzi19m") format("woff"),
-        url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?pzi19m##{$icomoon-font-family}") format("svg");
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
+  font-family: "#{$icomoon-font-family}";
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?pzi19m")
+      format("truetype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?pzi19m")
+      format("woff"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?pzi19m##{$icomoon-font-family}")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
 $font-types: (
-    add: "\e947",
-    card-visa: "\e948",
-    card-master: "\e94a",
-    card-discover: "\e94e",
-    card-amex: "\e957",
-    bank: "\e959",
-    bank-account: "\e95a",
-    card-large: "\e95d",
-    credit-card: "\e95e",
-    chevron-down: "\e960",
-    chevron-up: "\e961",
-    donation: "\e962",
-    profile: "\e963",
-    menu: "\e964",
-    payments: "\e965",
-    membership: "\e966",
-    family: "\e967",
-    profile-o: "\e968",
-    languages: "\e93c",
-    globe: "\e93d",
-    military: "\e93e",
-    drop-off: "\e93f",
-    religious: "\e940",
-    state-orgs: "\e941",
-    fees: "\e943",
-    external: "\e944",
-    parent: "\e945",
-    discount-o: "\e946",
-    search-button: "\e93b",
-    cancel: "\e931",
-    chevron-up-b: "\e932",
-    discount: "\e933",
-    chevron-down-b: "\e934",
-    filter: "\e935",
-    audience: "\e936",
-    group: "\e937",
-    location: "\e938",
-    meeting: "\e939",
-    verified: "\e93a",
-    webinar: "\e930",
-    urgent: "\e901",
-    resource: "\e902",
-    article: "\e903",
-    video: "\e904",
-    podcast: "\e905",
-    open: "\e906",
-    search: "\e907",
-    cart: "\e908",
-    alert: "\e909",
-    mail: "\e90a",
-    phone: "\e90b",
-    fb: "\e90c",
-    twitter: "\e90d",
-    rss: "\e90f",
-    arrow-down: "\e910",
-    arrow-up: "\e911",
-    series-left: "\e912",
-    series-right: "\e913",
-    play-arrow: "\e914",
-    quote: "\e915",
-    link: "\e900",
-    extracurriculars: "\e91b",
-    record: "\e90e",
-    school: "\e916",
-    special-needs: "\e917",
-    starting-strong: "\e918",
-    newsletter: "\e919",
-    grants: "\e91a",
-    alert-o: "\e91c",
-    state: "\e91d",
-    legislative: "\e91e",
-    international: "\e91f",
-    encyclopedia: "\e920",
-    grading: "\e921",
-    testing: "\e922",
-    files: "\e923",
-    homeschool: "\e924",
-    talk: "\e925",
-    telescope: "\e926",
-    favorite: "\e927",
-    download: "\e928",
-    my-location: "\e929",
-    news: "\e92a",
-    groups: "\e92b",
-    savings: "\e92c",
-    youtube: "\e92d",
-    instagram: "\e92e",
-    bio: "\e92f",
+  add: "\e947",
+  card-visa: "\e948",
+  card-master: "\e94a",
+  card-discover: "\e94e",
+  card-amex: "\e957",
+  bank: "\e959",
+  bank-account: "\e95a",
+  card-large: "\e95d",
+  credit-card: "\e95e",
+  chevron-down: "\e960",
+  chevron-up: "\e961",
+  donation: "\e962",
+  profile: "\e963",
+  menu: "\e964",
+  payments: "\e965",
+  membership: "\e966",
+  family: "\e967",
+  profile-o: "\e968",
+  languages: "\e93c",
+  globe: "\e93d",
+  military: "\e93e",
+  drop-off: "\e93f",
+  religious: "\e940",
+  state-orgs: "\e941",
+  fees: "\e943",
+  external: "\e944",
+  parent: "\e945",
+  discount-o: "\e946",
+  search-button: "\e93b",
+  cancel: "\e931",
+  chevron-up-b: "\e932",
+  discount: "\e933",
+  chevron-down-b: "\e934",
+  filter: "\e935",
+  audience: "\e936",
+  group: "\e937",
+  location: "\e938",
+  meeting: "\e939",
+  verified: "\e93a",
+  webinar: "\e930",
+  urgent: "\e901",
+  resource: "\e902",
+  article: "\e903",
+  video: "\e904",
+  podcast: "\e905",
+  open: "\e906",
+  search: "\e907",
+  cart: "\e908",
+  alert: "\e909",
+  mail: "\e90a",
+  phone: "\e90b",
+  fb: "\e90c",
+  twitter: "\e90d",
+  rss: "\e90f",
+  arrow-down: "\e910",
+  arrow-up: "\e911",
+  series-left: "\e912",
+  series-right: "\e913",
+  play-arrow: "\e914",
+  quote: "\e915",
+  link: "\e900",
+  extracurriculars: "\e91b",
+  record: "\e90e",
+  school: "\e916",
+  special-needs: "\e917",
+  starting-strong: "\e918",
+  newsletter: "\e919",
+  grants: "\e91a",
+  alert-o: "\e91c",
+  state: "\e91d",
+  legislative: "\e91e",
+  international: "\e91f",
+  encyclopedia: "\e920",
+  grading: "\e921",
+  testing: "\e922",
+  files: "\e923",
+  homeschool: "\e924",
+  talk: "\e925",
+  telescope: "\e926",
+  favorite: "\e927",
+  download: "\e928",
+  my-location: "\e929",
+  news: "\e92a",
+  groups: "\e92b",
+  savings: "\e92c",
+  youtube: "\e92d",
+  instagram: "\e92e",
+  bio: "\e92f",
 );
 
 @each $type, $value in $font-types {
-    .icon-#{$type} {
-        &:before {
-            content: $value;
-        }
+  .icon-#{$type} {
+    &:before {
+      content: $value;
     }
+  }
 }
 
 //===========================================

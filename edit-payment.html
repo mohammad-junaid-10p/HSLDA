@@ -40,7 +40,7 @@
           </ul>
           <div class="sidebar-btns">
             <button
-              class="btn btn-outline-primary btn-lg w-100 text-black fw-bold"
+              class="btn btn-tritary btn-lg w-100"
             >
               Donate
             </button>
@@ -72,15 +72,15 @@
                     role="tabpanel"
                   >
                     <div class="hslda-card-body pt-2">
-                      <h5 class="text-primary pb-3 mb-0">CREDIT CARD</h5>
                       <form>
+                        <h5 class="text-primary pb-3 mb-0">CREDIT CARD</h5>
                         <div class="row g-2 mb-4">
                           <div class="col-12">
                             <label class="form-label"
                               >Name on card</label
                             >
                             <input
-                              class="form-control"
+                              class="form-control is-valid"
                               aria-describedby="emailHelp"
                             />
                           </div>
@@ -90,9 +90,12 @@
                               >Card number</label
                             >
                             <input
-                              class="form-control"
+                              class="form-control is-invalid"
                               placeholder="0000 0000 0000 0000"
                             />
+                            <div class="invalid-feedback">
+                              <b>!</b> Please double-check your credit card number.
+                            </div>
                           </div>
                           <div class="col-6">
                             <label
@@ -210,10 +213,10 @@
                             Save
                           </button>
                           <button type="submit" class="btn btn-transparent w-100">
-                            <a href="" class="text-info">Cancel</a>
+                            <a href="" class="">Cancel</a>
                           </button>
                           <button type="submit" class="btn btn-transparent w-100">
-                            <a href="" class="text-info">Delete this payment method</a>
+                            <a href="" class="">Delete this payment method</a>
                           </button>
                         </div>
                       </form>

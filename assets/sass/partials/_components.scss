@@ -184,3 +184,32 @@
         color: $gray-500;
     }
 }
+
+.alert-modal {
+    .modal-footer {
+        border: none;
+        padding-top: 0;
+    }
+    .modal-dialog {
+        border-left: rem(4) solid $red;
+    }
+}
+
+.profile-details {
+    text-align: center;
+    .member-number {
+        color: $gray-500;
+    }
+    .profile-img {
+        width: rem(120);
+        height: rem(120);
+        overflow: hidden;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .edit-btn {
+        padding: 0 rem(15);
+    }
+}
