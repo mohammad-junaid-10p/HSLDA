@@ -3,6 +3,157 @@
 //===========================================
 
 /* Foro Sans fonts */
+@font-face {
+  font-family: Foro Sans;
+  src: url("../fonts/forosansthin-webfont.eot");
+  src: url("../fonts/forosansthin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/forosansthin-webfont.woff") format("woff"), url("../fonts/forosansthin-webfont.ttf") format("truetype"), url("../fonts/forosansthin-webfont.svg") format("svg");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: Foro Sans;
+  src: url("../fonts/forosansthinita-webfont.eot");
+  src: url("../fonts/forosansthinita-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/forosansthinita-webfont.woff") format("woff"), url("../fonts/forosansthinita-webfont.ttf") format("truetype"), url("../fonts/forosansthinita-webfont.svg") format("svg");
+  font-weight: 100;
+  font-style: italic; }
+@font-face {
+  font-family: Foro Sans;
+  src: url("../fonts/forosansxlig-webfont.eot");
+  src: url("../fonts/forosansxlig-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/forosansxlig-webfont.woff") format("woff"), url("../fonts/forosansxlig-webfont.ttf") format("truetype"), url("../fonts/forosansxlig-webfont.svg") format("svg");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: Foro Sans;
+  src: url("../fonts/forosansxligita-webfont.eot");
+  src: url("../fonts/forosansxligita-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/forosansxligita-webfont.woff") format("woff"), url("../fonts/forosansxligita-webfont.ttf") format("truetype"), url("../fonts/forosansxligita-webfont.svg") format("svg");
+  font-weight: 200;
+  font-style: italic; }
+@font-face {
+  font-family: Foro Sans;
+  src: url("../fonts/forosanslig-webfont.eot");
+  src: url("../fonts/forosanslig-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/forosanslig-webfont.woff") format("woff"), url("../fonts/forosanslig-webfont.ttf") format("truetype"), url("../fonts/forosanslig-webfont.svg") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: Foro Sans;
+  src: url("../fonts/forosansligita-webfont.eot");
+  src: url("../fonts/forosansligita-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/forosansligita-webfont.woff") format("woff"), url("../fonts/forosansligita-webfont.ttf") format("truetype"), url("../fonts/forosansligita-webfont.svg") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+@font-face {
+  font-family: Foro Sans;
+  src: url("../fonts/forosansreg-webfont.eot");
+  src: url("../fonts/forosansreg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/forosansreg-webfont.woff") format("woff"), url("../fonts/forosansreg-webfont.ttf") format("truetype"), url("../fonts/forosansreg-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Foro Sans;
+  src: url("../fonts/forosansita-webfont.eot");
+  src: url("../fonts/forosansita-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/forosansita-webfont.woff") format("woff"), url("../fonts/forosansita-webfont.ttf") format("truetype"), url("../fonts/forosansita-webfont.svg") format("svg");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: Foro Sans;
+  src: url("../fonts/forosansmed-webfont.eot");
+  src: url("../fonts/forosansmed-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/forosansmed-webfont.woff") format("woff"), url("../fonts/forosansmed-webfont.ttf") format("truetype"), url("../fonts/forosansmed-webfont.svg") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: Foro Sans;
+  src: url("../fonts/forosansmedita-webfont.eot");
+  src: url("../fonts/forosansmedita-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/forosansmedita-webfont.woff") format("woff"), url("../fonts/forosansmedita-webfont.ttf") format("truetype"), url("../fonts/forosansmedita-webfont.svg") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+@font-face {
+  font-family: Foro Sans;
+  src: url("../fonts/forosansbol-webfont.eot");
+  src: url("../fonts/forosansbol-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/forosansbol-webfont.woff") format("woff"), url("../fonts/forosansbol-webfont.ttf") format("truetype"), url("../fonts/forosansbol-webfont.svg") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: Foro Sans;
+  src: url("../fonts/forosansbolita-webfont.eot");
+  src: url("../fonts/forosansbolita-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/forosansbolita-webfont.woff") format("woff"), url("../fonts/forosansbolita-webfont.ttf") format("truetype"), url("../fonts/forosansbolita-webfont.svgf") format("svg");
+  font-weight: 700;
+  font-style: italic; }
+@font-face {
+  font-family: Foro Sans;
+  src: url("../fonts/forosansxbol-webfont.eot");
+  src: url("../fonts/forosansxbol-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/forosansxbol-webfont.woff") format("woff"), url("../fonts/forosansxbol-webfont.ttf") format("truetype"), url("../fonts/forosansxbol-webfont.svg") format("svg");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: Foro Sans;
+  src: url("../fonts/forosansxbolita-webfont.eot");
+  src: url("../fonts/forosansxbolita-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/forosansxbolita-webfont.woff") format("woff"), url("../fonts/forosansxbolita-webfont.ttf") format("truetype"), url("../fonts/forosansxbolita-webfont.svg") format("svg");
+  font-weight: 800;
+  font-style: italic; }
+@font-face {
+  font-family: Foro Sans;
+  src: url("../fonts/forosansbla-webfont.eot");
+  src: url("../fonts/forosansbla-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/forosansbla-webfont.woff") format("woff"), url("../fonts/forosansbla-webfont.ttf") format("truetype"), url("../fonts/forosansbla-webfont.svg") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: Foro Sans;
+  src: url("../fonts/forosansblaita-webfont.eot");
+  src: url("../fonts/forosansblaita-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/forosansblaita-webfont.woff") format("woff"), url("../fonts/forosansblaita-webfont.ttf") format("truetype"), url("../fonts/forosansblaita-webfont.svg") format("svg");
+  font-weight: 900;
+  font-style: italic; }
+
+/* Capita fonts */
+@font-face {
+  font-family: Capita;
+  src: url("../fonts/capitalight.eot");
+  src: url("../fonts/capitalight.eot?#iefix") format("embedded-opentype"), url("../fonts/capitalight.woff") format("woff"), url("../fonts/capitalight.ttf") format("truetype"), url("../fonts/capitalight.svg") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: Capita;
+  src: url("../fonts/capitaligita-webfont.eot");
+  src: url("../fonts/capitaligita-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/capitaligita-webfont.woff") format("woff"), url("../fonts/capitaligita-webfont.ttf") format("truetype"), url("../fonts/capitaligita-webfont.svg") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+@font-face {
+  font-family: Capita;
+  src: url("../fonts/capitareg-webfont.eot");
+  src: url("../fonts/capitareg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/capitareg-webfont.woff") format("woff"), url("../fonts/capitareg-webfont.ttf") format("truetype"), url("../fonts/capitareg-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Capita;
+  src: url("../fonts/capitaita-webfont.eot");
+  src: url("../fonts/capitaita-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/capitaita-webfont.woff") format("woff"), url("../fonts/capitaita-webfont.ttf") format("truetype"), url("../fonts/capitaita-webfont.svg") format("svg");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: Capita;
+  src: url("../fonts/capitamed-webfont.eot");
+  src: url("../fonts/capitamed-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/capitamed-webfont.woff") format("woff"), url("../fonts/capitamed-webfont.ttf") format("truetype"), url("../fonts/capitamed-webfont.svg") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: Capita;
+  src: url("../fonts/capitamedita-webfont.eot");
+  src: url("../fonts/capitamedita-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/capitamedita-webfont.woff") format("woff"), url("../fonts/capitamedita-webfont.ttf") format("truetype"), url("../fonts/capitamedita-webfont.svg") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+@font-face {
+  font-family: Capita;
+  src: url("../fonts/capitabol-webfont.eot");
+  src: url("../fonts/capitabol-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/capitabol-webfont.woff") format("woff"), url("../fonts/capitabol-webfont.ttf") format("truetype"), url("../fonts/capitabol-webfont.svg") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: Capita;
+  src: url("../fonts/capitabolita-webfont.eot");
+  src: url("../fonts/capitabolita-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/capitabolita-webfont.woff") format("woff"), url("../fonts/capitabolita-webfont.ttf") format("truetype"), url("../fonts/capitabolita-webfont.svg") format("svg");
+  font-weight: 700;
+  font-style: italic; }
+
+/* Fonts stacks */
+:root {
+  --font-family-sans-serif: "Foro Sans", Arial, "Noto Sans", sans-serif;
+  --font-family-serif: "Capita", Georgia, serif; }
 
 $icomoon-font-family: "icomoon" !default;
 $icomoon-font-path: "./../fonts" !default;
