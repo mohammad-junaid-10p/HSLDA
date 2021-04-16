@@ -9,4 +9,3 @@ toggleBtn.onclick = function () {
 function accordianToggle(element) {
     element.classList.toggle('accordian-expanded');
 };
-

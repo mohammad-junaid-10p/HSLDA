@@ -28,9 +28,11 @@ form {
 .form-control {
     &.is-invalid {
         background-size: rem(13);
+        border-width: rem(2);
     }
     &.is-valid {
         background-size: rem(15);
+        border-color: $gray-300;
     }
 }
 //===========================================

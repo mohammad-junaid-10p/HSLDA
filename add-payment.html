@@ -39,11 +39,7 @@
             <li><a href="">Compassion Grants</a></li>
           </ul>
           <div class="sidebar-btns">
-            <button
-              class="btn btn-tritary btn-lg w-100"
-            >
-              Donate
-            </button>
+            <button class="btn btn-tritary btn-lg w-100">Donate</button>
           </div>
         </div>
       </aside>
@@ -70,26 +66,24 @@
                     <button
                       class="nav-link active"
                       id="home-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#credit"
-                      type="button"
+                      data-toggle="tab"
+                      href="#credit"
                       role="tab"
-                      aria-controls="home"
+                      aria-controls="nav-home"
                       aria-selected="true"
                     >
-                      <img src="./assets/images/credit-card.svg" alt="">
+                      <img src="./assets/images/credit-card.svg" alt="" />
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
                     <button
                       class="nav-link"
                       id="profile-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#bank"
-                      type="button"
+                      data-toggle="tab"
+                      href="#bank"
                       role="tab"
-                      aria-controls="profile"
-                      aria-selected="false"
+                      aria-controls="nav-home"
+                      aria-selected="true"
                     >
                       <i class="icon-bank"></i>
                     </button>
@@ -106,32 +100,22 @@
                       <form>
                         <div class="row g-2 mb-4">
                           <div class="col-12">
-                            <label class="form-label"
-                              >Name on card</label
-                            >
+                            <label class="form-label">Name on card</label>
                             <input
                               class="form-control"
                               aria-describedby="emailHelp"
                             />
                           </div>
                           <div class="col-12">
-                            <label
-                              class="form-label"
-                              >Card number</label
-                            >
+                            <label class="form-label">Card number</label>
                             <input
                               class="form-control"
                               placeholder="0000 0000 0000 0000"
                             />
                           </div>
                           <div class="col-6">
-                            <label
-                              class="form-label"
-                              >Month</label
-                            >
-                            <select
-                              class="form-select"
-                            >
+                            <label class="form-label">Month</label>
+                            <select class="form-select">
                               <option selected>Month</option>
                               <option value="1">One</option>
                               <option value="2">Two</option>
@@ -139,13 +123,8 @@
                             </select>
                           </div>
                           <div class="col-6">
-                            <label
-                              class="form-label"
-                              >Year</label
-                            >
-                            <select
-                              class="form-select"
-                            >
+                            <label class="form-label">Year</label>
+                            <select class="form-select">
                               <option selected>Year</option>
                               <option value="1">One</option>
                               <option value="2">Two</option>
@@ -153,63 +132,35 @@
                             </select>
                           </div>
                           <div class="col-12">
-                            <label
-                              class="form-label"
-                              >Security Code</label
-                            >
-                            <input
-                              class="form-control"
-                              placeholder=""
-                            />
+                            <label class="form-label">Security Code</label>
+                            <input class="form-control" placeholder="" />
                           </div>
                         </div>
-                        <hr class="form-seprator m-0">
+                        <hr class="form-seprator m-0" />
                         <h5 class="text-primary py-3 mb-0">BILLING ADDRESS</h5>
                         <div class="row g-2 mb-4">
                           <div class="col-12">
-                            <label class="form-label"
-                              >First name</label
-                            >
+                            <label class="form-label">First name</label>
                             <input
                               class="form-control"
                               aria-describedby="emailHelp"
                             />
                           </div>
                           <div class="col-12">
-                            <label
-                              class="form-label"
-                              >Last name</label
-                            >
-                            <input
-                              class="form-control"
-                            />
+                            <label class="form-label">Last name</label>
+                            <input class="form-control" />
                           </div>
                           <div class="col-12">
-                            <label
-                              class="form-label"
-                              >Street address</label
-                            >
-                            <input
-                              class="form-control"
-                            />
+                            <label class="form-label">Street address</label>
+                            <input class="form-control" />
                           </div>
                           <div class="col-12">
-                            <label
-                              class="form-label"
-                              >City</label
-                            >
-                            <input
-                              class="form-control"
-                            />
+                            <label class="form-label">City</label>
+                            <input class="form-control" />
                           </div>
                           <div class="col-12">
-                            <label
-                              class="form-label"
-                              >State</label
-                            >
-                            <select
-                              class="form-select"
-                            >
+                            <label class="form-label">State</label>
+                            <select class="form-select">
                               <option selected>Month</option>
                               <option value="1">One</option>
                               <option value="2">Two</option>
@@ -217,29 +168,25 @@
                             </select>
                           </div>
                           <div class="col-12">
-                            <label
-                              class="form-label"
-                              >Zip Code</label
-                            >
-                            <input
-                              class="form-control"
-                            />
+                            <label class="form-label">Zip Code</label>
+                            <input class="form-control" />
                           </div>
                           <div class="col-12">
-                            <label
-                              class="form-label"
-                              >Country</label
-                            >
-                            <input
-                              class="form-control"
-                            />
+                            <label class="form-label">Country</label>
+                            <input class="form-control" />
                           </div>
                         </div>
                         <div class="form-btn">
-                          <button type="submit" class="btn btn-primary w-100 mb-2">
+                          <button
+                            type="submit"
+                            class="btn btn-primary w-100 mb-2"
+                          >
                             Save
                           </button>
-                          <button type="submit" class="btn btn-transparent w-100">
+                          <button
+                            type="submit"
+                            class="btn btn-transparent w-100"
+                          >
                             <a href="" class="">Cancel</a>
                           </button>
                         </div>
@@ -256,22 +203,15 @@
                       <form>
                         <div class="row g-2 mb-4">
                           <div class="col-12">
-                            <label class="form-label"
-                              >Name on card</label
-                            >
+                            <label class="form-label">Name on card</label>
                             <input
                               class="form-control"
                               aria-describedby="emailHelp"
                             />
                           </div>
                           <div class="col-12">
-                            <label
-                              class="form-label"
-                              >Account type</label
-                            >
-                            <select
-                              class="form-select"
-                            >
+                            <label class="form-label">Account type</label>
+                            <select class="form-select">
                               <option selected>account type</option>
                               <option value="1">One</option>
                               <option value="2">Two</option>
@@ -279,73 +219,45 @@
                             </select>
                           </div>
                           <div class="col-12">
-                            <label
-                              class="form-label"
-                              >Account number</label
-                            >
+                            <label class="form-label">Account number</label>
                             <input
                               class="form-control"
                               placeholder="Ex. 1234567890"
                             />
                           </div>
                           <div class="col-12">
-                            <label
-                              class="form-label"
-                              >Routing number</label
-                            >
+                            <label class="form-label">Routing number</label>
                             <input
                               class="form-control"
                               placeholder="Ex. 123456789"
                             />
                           </div>
                         </div>
-                        <hr class="form-seprator m-0">
+                        <hr class="form-seprator m-0" />
                         <h5 class="text-primary py-3 mb-0">BILLING ADDRESS</h5>
                         <div class="row g-2 mb-4">
                           <div class="col-12">
-                            <label class="form-label"
-                              >First name</label
-                            >
+                            <label class="form-label">First name</label>
                             <input
                               class="form-control"
                               aria-describedby="emailHelp"
                             />
                           </div>
                           <div class="col-12">
-                            <label
-                              class="form-label"
-                              >Last name</label
-                            >
-                            <input
-                              class="form-control"
-                            />
+                            <label class="form-label">Last name</label>
+                            <input class="form-control" />
                           </div>
                           <div class="col-12">
-                            <label
-                              class="form-label"
-                              >Street address</label
-                            >
-                            <input
-                              class="form-control"
-                            />
+                            <label class="form-label">Street address</label>
+                            <input class="form-control" />
                           </div>
                           <div class="col-12">
-                            <label
-                              class="form-label"
-                              >City</label
-                            >
-                            <input
-                              class="form-control"
-                            />
+                            <label class="form-label">City</label>
+                            <input class="form-control" />
                           </div>
                           <div class="col-12">
-                            <label
-                              class="form-label"
-                              >State</label
-                            >
-                            <select
-                              class="form-select"
-                            >
+                            <label class="form-label">State</label>
+                            <select class="form-select">
                               <option selected>Month</option>
                               <option value="1">One</option>
                               <option value="2">Two</option>
@@ -353,29 +265,25 @@
                             </select>
                           </div>
                           <div class="col-12">
-                            <label
-                              class="form-label"
-                              >Zip Code</label
-                            >
-                            <input
-                              class="form-control"
-                            />
+                            <label class="form-label">Zip Code</label>
+                            <input class="form-control" />
                           </div>
                           <div class="col-12">
-                            <label
-                              class="form-label"
-                              >Country</label
-                            >
-                            <input
-                              class="form-control"
-                            />
+                            <label class="form-label">Country</label>
+                            <input class="form-control" />
                           </div>
                         </div>
                         <div class="form-btn">
-                          <button type="submit" class="btn btn-primary w-100 mb-2">
+                          <button
+                            type="submit"
+                            class="btn btn-primary w-100 mb-2"
+                          >
                             Save
                           </button>
-                          <button type="submit" class="btn btn-transparent w-100">
+                          <button
+                            type="submit"
+                            class="btn btn-transparent w-100"
+                          >
                             <a href="" class="">Cancel</a>
                           </button>
                         </div>
@@ -390,6 +298,8 @@
       </div>
     </div>
   </body>
+
+  <script src="./assets/dist/jquery.js"></script>
   <script src="./assets/dist/script.js"></script>
   <script src="./assets/dist/bootstrap.js"></script>
 </html>

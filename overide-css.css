@@ -1,0 +1,13 @@
+.forceCommunitySection .cb-section_column,
+.siteforceStarterBody .cCenterPanel .slds-col--padded {
+    padding: 0 !important;
+}
+.siteforceStarterBody .cCenterPanel .slds-col--padded {
+    width: auto;    
+}
+.slds-wrap > .slds-col--padded:first-child {
+    width: 100%;
+}
+.siteforceStarterBody .cCenterPanel {
+    margin-top: 0;
+}
