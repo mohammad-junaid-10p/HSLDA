@@ -35,6 +35,28 @@ form {
         border-color: $gray-300;
     }
 }
+
+.cc-input {
+    position: relative;
+    .shown ~ input {
+        padding-right: rem(60);
+        &.is-invalid,&.is-valid {
+            padding-right: rem(80);
+            background-position: right rem(60) center;
+        }
+    }
+    img {
+        position: absolute;
+        right: rem(10);
+        top: rem(8);
+        height: rem(25);
+        display: none;
+        &.shown {
+            display: block; 
+        }
+    }
+}
+
 //===========================================
 // -Forms end
 //===========================================
