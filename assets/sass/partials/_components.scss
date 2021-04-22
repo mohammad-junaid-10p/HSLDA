@@ -12,6 +12,68 @@
     &.tab-pane {
         border-top: none;
     }
+    &-id {
+        width: rem(170);
+        border-radius: rem(10);
+        border: rem(2) solid $tritary;
+        overflow: hidden;
+        font-weight: 600;
+        &-label {
+            background: $primary;
+            color: white;
+            font-size: rem(10);
+            text-transform: uppercase;
+            letter-spacing: rem(0.5);
+            position: relative;
+            width: 25px;
+            flex-shrink: 0;
+            span {
+                position: absolute;
+                top: 81px;
+                left: 19px;
+                transform-origin: 0 0;
+                transform: rotate( 90deg );
+                display: block;
+                width: 64px;
+            }
+        }
+        &-info {
+            span {
+                font-size: rem(8);
+                display: block;
+                text-align: right;
+                color: #231F20;
+            }
+        }
+        &-content {
+            background: #E2EDF1;
+            padding: rem(7);
+        }
+        &-body {
+            flex-grow: 1;
+        }
+        .mem-heading {
+            color: $primary;
+            font-size: rem(8);
+        }
+        .mem-value {
+            font-size: rem(10);
+        }
+        
+        .barcode {
+            height: rem(8);
+            background: black;
+        }
+        .members {
+            background: #E2EDF1;
+            font-size: rem(8);
+            padding: 0 rem(8) rem(8) rem(8);
+        }
+        &-footer img {
+            max-width: 50%;
+            padding: rem(5);
+        }
+    }
     .card-type-box {
         .type-icon {
             margin-right: rem(15);
