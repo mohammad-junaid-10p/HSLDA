@@ -216,3 +216,30 @@
         padding: 0 rem(15);
     }
 }
+
+.membership-banner {
+    background-color: $neutral;
+    padding: 0 rem(25) rem(25) rem(15);
+    i {
+        font-size: rem(50);
+        color: $primary;
+    }
+    &-title {
+        font-size: rem(26);
+    }
+    .membership-perks {
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: rem(5);
+            p {
+                margin: 0;
+            }
+            i {
+                font-size: rem(18);
+                color: $success-300;
+                margin-right: rem(10);
+            }
+        }   
+    }
+}

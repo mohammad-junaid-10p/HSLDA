@@ -57,6 +57,57 @@ form {
     }
 }
 
+.switch {
+	position: relative;
+	display: block;
+	width: rem(44);
+	height: rem(20);
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        background-color: $gray-200;
+        border-radius: rem(20);
+        transition: .4s;
+        &:before {
+            position: absolute;
+            content: "\e94c";
+            font-family: $icomoon-font-family;
+            height: rem(25);
+            width: rem(25);
+            left: rem(-2);
+            bottom: rem(-3);
+            background-color: white;
+            box-shadow: rem(0) rem(1) rem(5) rgba(black, 0.2);
+            border-radius: 50%;
+            transition: .4s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: rem(11);
+            color: $gray-300;
+        }
+    }
+    input {
+        display: none;
+        &:checked {
+            + {
+                .slider {
+                    background-color: $success-100;
+                    &:before {
+                        content: "\e949";
+                        transform: translateX(rem(22));
+                        color: white;
+                        background-color: $success-300;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
 //===========================================
 // -Forms end
 //===========================================
