@@ -7,6 +7,10 @@
   @return ($pixels / $context) * 1rem;
 }
 
+@function em($pixels, $context: 16) {
+  @return #{$pixels/$context}em;
+}
+
 // Media Query
 @mixin mq($breakpoint, $type: min) {
   // Checking $breakpoint value in $grid-breakpoints object value

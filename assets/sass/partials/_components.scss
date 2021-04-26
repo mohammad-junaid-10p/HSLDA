@@ -12,68 +12,6 @@
     &.tab-pane {
         border-top: none;
     }
-    &-id {
-        width: rem(170);
-        border-radius: rem(10);
-        border: rem(2) solid $tritary;
-        overflow: hidden;
-        font-weight: 600;
-        &-label {
-            background: $primary;
-            color: white;
-            font-size: rem(10);
-            text-transform: uppercase;
-            letter-spacing: rem(0.5);
-            position: relative;
-            width: 25px;
-            flex-shrink: 0;
-            span {
-                position: absolute;
-                top: 81px;
-                left: 19px;
-                transform-origin: 0 0;
-                transform: rotate( 90deg );
-                display: block;
-                width: 64px;
-            }
-        }
-        &-info {
-            span {
-                font-size: rem(8);
-                display: block;
-                text-align: right;
-                color: #231F20;
-            }
-        }
-        &-content {
-            background: #E2EDF1;
-            padding: rem(7);
-        }
-        &-body {
-            flex-grow: 1;
-        }
-        .mem-heading {
-            color: $primary;
-            font-size: rem(8);
-        }
-        .mem-value {
-            font-size: rem(10);
-        }
-        
-        .barcode {
-            height: rem(8);
-            background: black;
-        }
-        .members {
-            background: #E2EDF1;
-            font-size: rem(8);
-            padding: 0 rem(8) rem(8) rem(8);
-        }
-        &-footer img {
-            max-width: 50%;
-            padding: rem(5);
-        }
-    }
     .card-type-box {
         .type-icon {
             margin-right: rem(15);
@@ -133,6 +71,117 @@
                 display: block;
             }
         }
+    }
+}
+
+.hslda-card-id {
+    width: 170px;
+    height: 99px;
+    border-radius: 10px;
+    border: 2px solid $tritary;
+    overflow: hidden;
+    font-weight: 600;
+    background: $primary;
+    &-label {
+        background: $primary;
+        color: white;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        position: relative;
+        width: 11px;
+        flex-shrink: 0;
+        span {
+            position: absolute;
+            top: 0;
+            font-size: 4px;
+            left: 8.5px;
+            text-align: center;
+            transform-origin: 0 0;
+            transform: rotate( 90deg );
+            display: block;
+            width: 99px;
+        }
+    }
+    &-info {
+        span {
+            display: block;
+            text-align: right;
+        }
+    }
+    &-wrapper {
+        padding: 6.5px 5.75px 11px 5.75px;
+        background: #E2EDF1;
+        height: calc(100% - 22px);
+    }
+    &-content {
+        justify-content: space-between;
+    }
+    &-title {
+        display: flex;
+        flex-direction: column;
+        img {
+            width: 46px;
+            margin-bottom: 4px;
+        }
+    }
+    &-body {
+        flex-grow: 1;
+    }
+    .ms-heading {
+        color: $primary;
+        font-size: 8px;
+        font-weight: 300;
+    }
+    .members-name {
+        font-size: 5.5px;
+    }
+    .ms-value {
+        font-size: 5px;
+        line-height: 1;
+        margin-bottom: 2.5px;
+    }
+    .ms-label {
+        font-size: 3.5px;
+        display: block;
+        font-weight: 300;
+        text-align: right;
+        line-height: 1;
+    }
+    .barcode {
+        height: 8px;
+        background: #000;
+        width: 40px;
+        margin-bottom: 2.5px;
+        display: flex;
+        margin-left: auto;
+    }
+    &-footer {
+        height: 22px;
+        padding: 0 6px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        img {
+            height: 13px;
+            &:nth-child(2) {
+                height: 15px;
+            }
+        }
+    }
+}
+.membership-card {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    > img {
+        margin-left: rem(-90);
+    }
+    .hslda-card-id {
+        position: absolute;
     }
 }
 .hlsda-card-title {
@@ -223,6 +272,7 @@
             width: 100%;
             height: rem(80);
             border-radius: 0;
+            color: $gray-500;
             &.active {
                 border-top: rem(4) solid $tritary;
             }
@@ -304,4 +354,29 @@
             }
         }   
     }
+}
+
+.collapse-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(15);
+    font-size: rem(22);
+    cursor: pointer;
+    i {
+        margin-left: rem(10);
+        font-size: rem(20);
+        transition: 0.3s;
+    }
+    &.collapsed {
+        margin-bottom: rem(25);
+        i {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.error-code {
+    font-family: $font-secondary;
+    font-size: rem(12);
+    margin-top: rem(10);
 }
