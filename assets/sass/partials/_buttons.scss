@@ -15,8 +15,11 @@
   }
   &.btn-tritary {
     background: white;
-    color: black;
+    color: $primary;
     border: rem(1) solid $tritary;
+    &.btn-donate {
+      color: black;
+    }
     &:hover {
       color: white;
       background: $tritary;

@@ -14,7 +14,7 @@
         <div class="sidebar-wrapper">
           <ul class="page-links mb-3">
             <li class="main-logo">
-              <img src="./assets/images/hslda-logo.svg" alt="">
+              <img src="./assets/images/hslda-logo.svg" alt="" />
             </li>
             <li>
               <a href=""><i class="icon-profile-o"></i> <span>Profile</span></a>
@@ -39,7 +39,7 @@
             <li><a href="">Compassion Grants</a></li>
           </ul>
           <div class="sidebar-btns">
-            <button class="btn btn-tritary btn-lg w-100">Donate</button>
+            <button class="btn btn-tritary btn-lg btn-donate w-100">Donate</button>
           </div>
         </div>
       </aside>
@@ -48,42 +48,77 @@
           class="main-header d-flex justify-content-between align-items-center"
         >
           <i id="toggle" class="icon-menu"></i>
-          <div class="header-logo"><img src="./assets/images/my-hslda-logo.svg" alt=""></div>
+          <div class="header-logo">
+            <img src="./assets/images/my-hslda-logo.svg" alt="" />
+          </div>
           <div class="header-profile">
             <img src="./assets/images/user-palceholder.png" alt="" />
           </div>
         </header>
         <section class="main-section">
+          <div class="header-alert">
+            <div>
+              <h5>Your membership expires soon.</h5>
+              <div>
+                <i></i>
+                <p>Renew your membership today to enjoy uninterrupted benefits.</p>
+              </div>
+            </div>
+          </div>
           <div class="main-section-container">
             <h2 class="py-4 text-primary">Payments</h2>
             <div class="row">
-              <div class="col-12 col-lg-6">
-                <h3 class="text-primary mb-3 hlsda-card-title">My scheduled payments</h3>
+              <div class="col-12 col-lg-6 mb-3">
+                <h3 class="text-primary mb-3 hlsda-card-title">
+                  My membership summary
+                </h3>
                 <div class="hslda-card pb-0">
                   <div class="hslda-card-header pb-3">
-                    <div class="card-type-box d-flex align-items-center mb-3">
-                      <div class="type-icon">
-                        <i class="icon-favorite text-primary"></i>
+                    <div class="membership-banner">
+                      <div
+                        class="d-flex align-items-end justify-content-between mb-2"
+                      >
+                        <h6 class="text-primary-dark mb-0">MEMBERSHIP TYPE</h6>
+                        <i class="icon-membership-banner"></i>
                       </div>
-                      <div class="d-flex flex-column">
-                        <h5 class="type-title mb-0">HSLDA Membership</h5>
-                        <span class="type-sub-title"
-                          >Monthly auto-pay (1 year)</span
-                        >
-                      </div>
-                    </div>
-                    <div class="alert-box flex-sm-row flex-column">
-                      <div class="alert-content mb-sm-0 mb-2 me-sm-2">
-                        <h6 class="alert-tile mb-0">
-                          This scheduled payment was declined.
-                        </h6>
-                        <span class="alert-text">
-                          Update your payment method, add a new one, or try
-                          again.
-                        </span>
-                      </div>
-                      <div class="alert-btn">
-                        <button class="btn btn-primary">Update</button>
+                      <h2
+                        class="membership-banner-title text-primary-dark mb-0"
+                      >
+                        Annual, charged monthly
+                      </h2>
+                      <p class="text-primary-dark pt-1 mt-2 mb-0">
+                        It’s easy to become a member again. Get access to:
+                      </p>
+                      <div class="pt-1 mt-2">
+                        <ul class="membership-perks">
+                          <li>
+                            <i class="icon-tick"></i>
+                            <p class="text-primary-dark">
+                              24/7 hotline for emergency legal assistance
+                            </p>
+                          </li>
+                          <li>
+                            <i class="icon-tick"></i>
+                            <p class="text-primary-dark">
+                              One-on-one homeschool coaching
+                            </p>
+                          </li>
+                          <li>
+                            <i class="icon-tick"></i>
+                            <p class="text-primary-dark">
+                              Help understanding your state homeschool law
+                            </p>
+                          </li>
+                          <li>
+                            <i class="icon-tick"></i>
+                            <p class="text-primary-dark">
+                              Answers specific to your homeschool journey
+                            </p>
+                          </li>
+                        </ul>
+                        <button class="btn btn-primary">
+                          See Membership Options
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -91,198 +126,103 @@
                     <ul class="card-list mb-2">
                       <li>
                         <div>
-                          <p class="fw-bold mb-0">Recurring payment:</p>
-                          <span class="small">$12 monthly</span>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <p class="fw-bold mb-0">Next payment:</p>
-                          <span class="small">02/23/2021</span>
+                          <p class="fw-bold mb-0">Auto-renew is OFF</p>
                         </div>
                         <div class="d-flex justify-content-end">
-                          <span class="badge badge-outline-secondary">Upcoming</span>
+                          <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider"></span>
+                          </label>
                         </div>
-                      </li>
-                      <li>
-                        <div>
-                          <p class="fw-bold mb-0">Next payment:</p>
-                          <span class="small">02/23/2021</span>
-                        </div>
-                        <div class="d-flex justify-content-end">
-                          <span class="badge badge-outline-danger">Failed</span>
-                          <a href="" class="text-gray-400 ms-2">Try Again</a href="">
-                        </div>
-                        <p class="fst-italic text-dark w-100 mt-2">
-                          Your payment will be reattempted within the next 24 hours.
+                        <p class="text-gray-400 small mb-0 mt-2 w-100">
+                          Your monthly scheduled payments and membership
+                          benefits will continue until your plan expires on
+                          October 5, 2021.
                         </p>
                       </li>
                       <li>
                         <div>
-                          <p
-                            class="fw-bold mb-1 d-flex justify-content-between"
-                          >
-                            Payment method:
-                            <a class="fw-normal  small cursor-pointer" href="./update-payment.html">Change</a>
-                          </p>
-                          <div
-                            class="cc-details d-flex justify-content-between"
-                          >
-                            <div class="cc-details-container">
-                              <div class="cc-icon d-flex">
-                                <img src="./assets/images/bank-account.svg" alt="">
-                              </div>
-                              <div class="cc-number">
-                                <p class="fw-bold mb-0">Mastercard</p>
-                                <span class="small">09/20 * * * * 1973</span>
-                              </div>
-                            </div>
-                            <div
-                              class="cc-details d-flex justify-content-end align-items-center"
-                            >
-                              <span
-                                class="badge badge-outline-danger"
-                                >Expired</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="hslda-card-footer" onclick="accordianToggle(this)">
-                    <div class="footer-wrapper">
-                      <p class="text-primary mb-0 d-flex align-items-center">
-                        Show all payments <i class="icon-chevron-down ms-2"></i>
-                      </p>
-                    </div>
-                    <div class="card-accordian-wrapper pt-3">
-                      <p class="mb-0 pb-3 text-center">Your HSLDA membership auto renews on <b>October 23, 2021</b></p>
-                      <ul class="card-list">
-                        <li>
-                          <div class="d-flex align-items-center">
-                            <b class="me-2">10/23/2020</b>
-                            <span class="me-2">$12</span>
-                            <span class="badge badge-outline-success">Paid</span>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="d-flex align-items-center">
-                            <b class="me-2">10/23/2020</b>
-                            <span class="me-2">$12</span>
-                            <span class="badge badge-outline-success">Paid</span>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="d-flex align-items-center">
-                            <b class="me-2">10/23/2020</b>
-                            <span class="me-2">$12</span>
-                            <span class="badge badge-outline-success">Paid</span>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="d-flex align-items-center">
-                            <b class="me-2">10/23/2020</b>
-                            <span class="me-2">$12</span>
-                            <span class="badge badge-outline-secondary">Upcoming</span>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="d-flex align-items-center">
-                            <b class="me-2">10/23/2020</b>
-                            <span class="me-2">$12</span>
-                            <span class="badge badge-outline-secondary">Upcoming</span>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="d-flex align-items-center">
-                            <b class="me-2">10/23/2020</b>
-                            <span class="me-2">$12</span>
-                            <span class="badge badge-outline-secondary">Upcoming</span>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="d-flex align-items-center">
-                            <b class="me-2">10/23/2020</b>
-                            <span class="me-2">$12</span>
-                            <span class="badge badge-outline-secondary">Upcoming</span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6">
-                <h3 class="text-primary mb-3 hlsda-card-title"></h3>
-                <div class="hslda-card secondary pb-0">
-                  <div class="hslda-card-header pb-3">
-                    <div class="card-type-box d-flex align-items-center mb-1">
-                      <div class="type-icon">
-                        <i class="icon-donation text-secondary"></i>
-                      </div>
-                      <div class="d-flex flex-column">
-                        <h5 class="type-title mb-0">HSLDA Donation</h5>
-                        <span class="type-sub-title">Children of Single Parents fund</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="hslda-card-body">
-                    <ul class="card-list mb-2">
-                      <li>
-                        <div>
-                          <p class="fw-bold mb-0">Recurring payment:</p>
-                          <span class="small">$12 monthly</span>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <p class="fw-bold mb-0">Next payment:</p>
-                          <span class="small">02/23/2021</span>
+                          <p class="fw-bold mb-0">Auto-renew is OFF</p>
                         </div>
                         <div class="d-flex justify-content-end">
-                          <span class="badge badge-outline-secondary">Upcoming</span>
+                          <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider"></span>
+                          </label>
+                        </div>
+                        <p class="text-gray-400 small mb-0 mt-2 w-100">
+                          <a href="">Contact HSLDA</a> to turn on auto-renew.
+                        </p>
+                      </li>
+                      <li>
+                        <div>
+                          <p class="fw-bold mb-0">Amount:</p>
+                          <span class="small d-block">$12 Yearly</span>
+                          <p class="text-gray-400 small mb-0 mt-2 w-100">
+                            This is your current pricing. It will be
+                            recalculated at the time of auto-renewal. Any
+                            discount added or removed will adjust the amount of
+                            your upcoming membership.
+                          </p>
                         </div>
                       </li>
                       <li>
                         <div>
-                          <p
-                            class="fw-bold mb-1 d-flex justify-content-between"
+                          <p class="fw-bold mb-0">Membership status:</p>
+                          <span class="small">Renews on May 15, 2021</span>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                          <span class="badge badge-outline-success"
+                            >Active</span
                           >
-                            Payment method:
-                            <a class="fw-normal  small cursor-pointer" href="./update-payment.html">Change</a>
-                          </p>
-                          <div
-                            class="cc-details d-flex justify-content-between"
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <p class="fw-bold mb-0">Membership status:</p>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                          <span class="badge badge-outline-danger"
+                            >Expired</span
                           >
-                            <div class="cc-details-container">
-                              <div class="cc-icon d-flex">
-                                <img src="./assets/images/credit-card-mastercard.svg" alt="">
-                              </div>
-                              <div class="cc-number">
-                                <p class="fw-bold mb-0">Mastercard</p>
-                                <span class="small">09/20 * * * * 1973</span>
-                              </div>
-                            </div>
-                            <div
-                              class="cc-details d-flex justify-content-end align-items-center"
-                            >
-                              <span
-                                class="badge badge-outline-danger"
-                                >Expired</span
-                              >
-                            </div>
-                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <p class="fw-bold mb-0">Member number:</p>
+                          <span class="small">9876543</span>
                         </div>
                       </li>
                     </ul>
                   </div>
                   <div class="hslda-card-footer">
-                    <div class="footer-wrapper" data-bs-toggle="modal" data-bs-target="#donationModal">
+                    <div
+                      class="footer-wrapper"
+                      data-toggle="modal"
+                      data-target="#donationModal"
+                    >
                       <p class="text-primary mb-0 d-flex align-items-center">
-                       Cancel donation
+                        Cancel Membership
                       </p>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <h3 class="text-primary mb-3 hlsda-card-title">
+                  My membership cards
+                </h3>
+                <div class="hslda-card pb-0">
+                  <div class="hslda-card-header pb-3">
+                    <div class="membership-card">
+                      <img src="./assets/images/membership-card.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="hslda-card-body">
+                    <p class="text-dark">
+                      Use your card for teacher discounts offered by participating museums, historical sites, and retailers. 
+                    </p>
+                    <button class="btn btn-tritary w-100 mb-4 color">Download/print membership card</button>
                   </div>
                 </div>
               </div>
@@ -291,20 +231,30 @@
         </section>
       </div>
     </div>
-    <div class="modal fade alert-modal" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+    <div
+      class="modal fade alert-modal"
+      id="donationModal"
+      aria-labelledby="donationModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-body">
-            <h4 class="mb-0">Are you sure you want to cancel this recurring donation?</h4>
+            <h4 class="mb-0">
+              Are you sure you want to cancel your membership?
+            </h4>
           </div>
           <div class="modal-footer d-flex justify-content-between">
-            <button class="btn" data-bs-dismiss="modal"><a href="" class="">Go back</a></button>
-            <button class="btn btn-danger">Cancel donation</button>
+            <button class="btn" data-bs-dismiss="modal">
+              <a href="" class="">Go back</a>
+            </button>
+            <button class="btn btn-danger">Cancel membership</button>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script src="./assets/dist/jquery.js"></script>
   <script src="./assets/dist/script.js"></script>
   <script src="./assets/dist/bootstrap.js"></script>
 </html>

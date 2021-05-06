@@ -35,9 +35,6 @@
     &-header {
         padding-bottom: rem(25);
     }
-    &-body {
-
-    }
     .hslda-card-footer {
         margin: 0 rem(-25);
         .footer-wrapper {
@@ -173,16 +170,13 @@
     }
 }
 .membership-card {
-    position: relative;
     justify-content: center;
     display: flex;
     align-items: center;
     > img {
-        margin-left: rem(-90);
+        width: rem(194)
     }
-    .hslda-card-id {
-        position: absolute;
-    }
+
 }
 .hlsda-card-title {
     min-height: rem(24);
@@ -199,10 +193,6 @@
 }
 
 .card-list {
-    &.small {
-        li {
-        }
-    }
     li {
         padding: rem(15) 0;
         border-top: 1px solid $gray-200;
@@ -379,4 +369,10 @@
     font-family: $font-secondary;
     font-size: rem(12);
     margin-top: rem(10);
+}
+.header-alert {
+    height: rem(104);
+    border-bottom: rem(3) solid $red;
+    background-color: rgba($red, 0.04);
+    padding: rem(20);
 }
