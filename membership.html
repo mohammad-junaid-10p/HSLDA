@@ -56,15 +56,20 @@
           </div>
         </header>
         <section class="main-section">
-          <div class="header-alert">
+          <div class="header-alert d-flex justify-content-between flex-column">
             <div>
-              <h5>Your membership expires soon.</h5>
+              <h5 class="text-danger">Your membership expires soon.</h5>
+            </div>
+            <div class="align-items-center d-flex flex-md-nowrap flex-wrap justify-content-between">
+              <div class="d-flex flex-nowrap align-items-center">
+                <img class="me-2 d-none d-md-block" src="./assets/images/alert.svg" alt=""/>
+                <p class="mb-0">Renew your membership today to enjoy uninterrupted benefits. <a href="#" class="d-md-none" onclick="{!c.renewMembership}">View Scheduled Payments</a></p>
+              </div>
               <div>
-                <i></i>
-                <p>Renew your membership today to enjoy uninterrupted benefits.</p>
+                <button class="bg-white border-danger btn fw-normal mt-2 mt-md-0 text-dark d-none d-md-block" onclick="{!c.renewMembership}">Renew Membership</button>
               </div>
             </div>
-          </div>
+          </div>  
           <div class="main-section-container">
             <h2 class="py-4 text-primary">Payments</h2>
             <div class="row">
@@ -212,7 +217,7 @@
                 <h3 class="text-primary mb-3 hlsda-card-title">
                   My membership cards
                 </h3>
-                <div class="hslda-card pb-0">
+                <div class="hslda-card success pb-0">
                   <div class="hslda-card-header pb-3">
                     <div class="membership-card">
                       <img src="./assets/images/membership-card.svg" alt="">

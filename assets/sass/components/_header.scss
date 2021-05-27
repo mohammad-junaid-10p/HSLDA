@@ -8,9 +8,7 @@
     padding: 0 rem(15);
     .header-profile {
         width: rem(35);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @extend %flexcenter;
     }
     .header-logo {
         width: rem(128);

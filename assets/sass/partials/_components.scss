@@ -6,6 +6,9 @@
     &.secondary {
         border-top: rem(4) solid $secondary;
     }
+    &.success {
+        border-top: rem(4) solid $success-300;
+    }
     &.accordian-card {
         padding: rem(20) rem(25) rem(0) rem(25);
     }
@@ -39,11 +42,9 @@
         margin: 0 rem(-25);
         .footer-wrapper {
             padding: rem(9.5);
-            display: flex;
-            align-items: center;
-            justify-content: center;
             border-top: rem(1) solid $gray-200;
             cursor: pointer;
+            @extend %flexcenter;
         }
         .icon-chevron-down {
             font-size: rem(18);
@@ -71,116 +72,19 @@
     }
 }
 
-.hslda-card-id {
-    width: 170px;
-    height: 99px;
-    border-radius: 10px;
-    border: 2px solid $tritary;
-    overflow: hidden;
-    font-weight: 600;
-    background: $primary;
-    &-label {
-        background: $primary;
-        color: white;
-        font-size: 10px;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        position: relative;
-        width: 11px;
-        flex-shrink: 0;
-        span {
-            position: absolute;
-            top: 0;
-            font-size: 4px;
-            left: 8.5px;
-            text-align: center;
-            transform-origin: 0 0;
-            transform: rotate( 90deg );
-            display: block;
-            width: 99px;
-        }
-    }
-    &-info {
-        span {
-            display: block;
-            text-align: right;
-        }
-    }
-    &-wrapper {
-        padding: 6.5px 5.75px 11px 5.75px;
-        background: #E2EDF1;
-        height: calc(100% - 22px);
-    }
-    &-content {
-        justify-content: space-between;
-    }
-    &-title {
-        display: flex;
-        flex-direction: column;
-        img {
-            width: 46px;
-            margin-bottom: 4px;
-        }
-    }
-    &-body {
-        flex-grow: 1;
-    }
-    .ms-heading {
-        color: $primary;
-        font-size: 8px;
-        font-weight: 300;
-    }
-    .members-name {
-        font-size: 5.5px;
-    }
-    .ms-value {
-        font-size: 5px;
-        line-height: 1;
-        margin-bottom: 2.5px;
-    }
-    .ms-label {
-        font-size: 3.5px;
-        display: block;
-        font-weight: 300;
-        text-align: right;
-        line-height: 1;
-    }
-    .barcode {
-        height: 8px;
-        background: #000;
-        width: 40px;
-        margin-bottom: 2.5px;
-        display: flex;
-        margin-left: auto;
-    }
-    &-footer {
-        height: 22px;
-        padding: 0 6px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: white;
-        img {
-            height: 13px;
-            &:nth-child(2) {
-                height: 15px;
-            }
-        }
-    }
-}
 .membership-card {
-    justify-content: center;
-    display: flex;
-    align-items: center;
+    @extend %flexcenter;
+
     > img {
         width: rem(194)
     }
 
 }
+
 .hlsda-card-title {
     min-height: rem(24);
 }
+
 .alert-box {
     display: flex;
     justify-content: space-between;
@@ -195,7 +99,7 @@
 .card-list {
     li {
         padding: rem(15) 0;
-        border-top: 1px solid $gray-200;
+        border-top: rem(1) solid $gray-200;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -210,6 +114,19 @@
 }
 
 .cc-details {
+    &.family-tree {
+        .cc-icon {
+            width: rem(42);
+            height: rem(42);
+            overflow: hidden;
+            border-radius: 50%;
+            @extend %flexcenter;
+        }
+        .small {
+            color: $gray-500;
+            font-weight: 400;
+        }
+    }
     .cc-details-container {
         display: flex;
         align-items: center;
@@ -308,11 +225,28 @@
     .profile-img {
         width: rem(120);
         height: rem(120);
+        @include mq("md", max) {
+            width: 90px;
+            height: 90px;
+        }
         overflow: hidden;
+        border: rem(2) solid white;
         border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @extend %flexcenter;
+
+    }
+    .icon-camera {
+        position: absolute;
+        background-color: white;
+        height: rem(34);
+        width: rem(34);
+        border-radius: 50%;
+        border: rem(1) solid $tritary;
+        color: $primary;
+        right: rem(5);
+        bottom: rem(5);
+        cursor: pointer;
+        @extend %flexcenter;
     }
     .edit-btn {
         padding: 0 rem(15);
@@ -370,9 +304,11 @@
     font-size: rem(12);
     margin-top: rem(10);
 }
+
 .header-alert {
-    height: rem(104);
+    min-height: rem(104);
     border-bottom: rem(3) solid $red;
     background-color: rgba($red, 0.04);
     padding: rem(20);
+    
 }

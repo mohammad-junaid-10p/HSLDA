@@ -65,7 +65,9 @@
         }
     }
     .sidebar-btns {
-        padding: 0 15px;
+        padding: 0 rem(15);
+        margin-bottom: rem(30);
+        width: calc(100% - #{rem(15)});
     }
 }
 //===========================================

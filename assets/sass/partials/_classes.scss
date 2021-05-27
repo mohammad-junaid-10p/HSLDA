@@ -8,6 +8,17 @@
 .cursor-pointer {
   cursor: pointer;
 }
+
+.font-secondary {
+  font-family: $font-secondary;
+}
+
+%flexcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 //===========================================
 // -Helper Classes end
 //===========================================
