@@ -8,7 +8,10 @@
     padding: 0 rem(15);
     .header-profile {
         width: rem(35);
+        height: rem(35);
         @extend %flexcenter;
+        border-radius: 50%;
+        overflow: hidden;
     }
     .header-logo {
         width: rem(128);

@@ -106,6 +106,15 @@ form {
     }
 }
 
+.password-field {
+    display: flex;
+    align-items: center;
+    i {
+        font-size: rem(20);
+        margin-left: rem(-30);
+        color: $gray-500;
+    }
+}
 
 //===========================================
 // -Forms end

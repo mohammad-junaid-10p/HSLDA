@@ -60,6 +60,10 @@ ol[class] {
   margin-top: 0;
 }
 
+.dropdown-toggle::after {
+  border-top-color: $gray-500;
+}
+
 @for $i from 1 through 6 {
   h#{$i},
   .h#{$i} {

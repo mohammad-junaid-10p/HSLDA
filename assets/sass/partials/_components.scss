@@ -20,7 +20,7 @@
             margin-right: rem(15);
             font-size: rem(50);
             i {
-                height: rem(42);
+                height: rem(47);
                 display: flex;
                 align-items: flex-end;
             }
@@ -311,4 +311,32 @@
     background-color: rgba($red, 0.04);
     padding: rem(20);
     
+}
+.password-strength {
+    width: 100%;
+    display: flex;
+    &-bar {
+        height: rem(22);
+        background-color: $gray-300;
+        border-radius: rem(6);
+        overflow: hidden;
+        width: 100%;
+        .strength {
+            height: 100%;
+            &.weak {
+                background-color: $red;
+            }
+            &.moderate {
+                background-color: $warning;
+            }
+            &.strong {
+                background-color: $success;
+            }
+        }
+    }
+    &-text {
+        white-space: nowrap;
+        margin-left: rem(10);
+        margin-right: rem(15);
+    }
 }
