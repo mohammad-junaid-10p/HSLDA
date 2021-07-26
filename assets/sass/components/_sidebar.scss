@@ -4,7 +4,7 @@
 
 .main-sidebar {
     width: 0;
-    height: 100vh;
+    height: 100%;
     flex-shrink: 0;
     position: fixed;
     left: 0;
@@ -17,6 +17,10 @@
     }
     .sidebar-wrapper {
         width: 250px;
+        height: calc(100% - 3px);
+        position: relative;
+        display: flex;
+        flex-direction: column;
     }
     a {
         text-decoration: none;
@@ -68,6 +72,17 @@
         padding: 0 rem(15);
         margin-bottom: rem(30);
         width: calc(100% - #{rem(15)});
+    }
+}
+
+.footer-text {
+    display: flex;
+    padding-bottom: rem(15);
+    margin-bottom: 0;
+    margin-left: rem(15);
+    margin-top: auto;
+    li {
+        margin-right: rem(8);
     }
 }
 //===========================================

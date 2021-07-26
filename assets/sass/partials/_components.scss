@@ -221,6 +221,7 @@
     }
     .profile-name {
         color: $primary;
+        word-break: break-word;
     }
     .profile-img {
         width: rem(120);
@@ -338,5 +339,94 @@
         white-space: nowrap;
         margin-left: rem(10);
         margin-right: rem(15);
+    }
+}
+
+.city-predictions {
+    background: white;
+    padding: rem(16) !important;
+    border-radius: rem(4);
+    border: rem(1) solid $gray-300;
+    margin-bottom: 0;
+    margin-top: rem(-8);
+    li {
+        border-bottom: 1px solid #c7c7c7;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.wizard-header {
+    display: flex;
+    justify-content: center;
+    &-container {
+        width: 70%;
+    }
+    &-steps {
+        display: flex;
+        width: 100%;
+    }
+    &-steptext {
+        margin-bottom: rem(-12);
+        display: block;
+    }
+    &-segment {
+        height: rem(6);
+        background-color: darken($gray-200, 10);
+        display: block;
+        width: 100%;
+        border-radius: rem(10);
+        margin-right: rem(5);
+        &:last-child {
+            margin-right: 0;
+        }
+        &.active {
+            background-color: $secondary;
+        }
+    }
+}
+
+.wizard-files {
+    &-content {
+        background-color: white;
+        border-radius: rem(4);
+        padding: rem(12);
+        padding-bottom: rem(16);
+        color: $dark;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: rem(15);
+        .icon-files {
+            font-size: rem(28);
+            color: $success-300;
+        }
+        .icon-cross {
+            font-size: rem(12);
+            color: $gray-500;
+        }
+    }
+    &-progress {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: rem(4);
+        &.inprogress {
+            background-color: darken($success-100, 10);
+        }
+        &.complete {
+            background-color: $success-300;
+        }
+        &.failed {
+            background-color: $red;
+        }
+    }
+}
+
+.wizard-send-btn {
+    .icon-chevron-up {
+        transform: rotate(90deg);
+        display: inline-block;
+        margin-left: rem(6);
     }
 }

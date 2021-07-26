@@ -26,6 +26,9 @@ form {
     }
 }
 .form-control {
+    &::-ms-reveal,&::-ms-clear {
+      display: none;
+    }
     &.is-invalid {
         background-size: rem(13);
         border-width: rem(2);
@@ -112,7 +115,8 @@ form {
     i {
         font-size: rem(20);
         margin-left: rem(-30);
-        color: $gray-500;
+        color: rgba($gray-500, 0.8);
+        cursor: pointer;
     }
 }
 

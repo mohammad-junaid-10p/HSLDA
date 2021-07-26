@@ -78,6 +78,13 @@ $icomoon-font-path: "./../fonts" !default;
 }
 
 $font-types: (
+  help: "\e950",
+  legal: "\e951",
+  education: "\e952",
+  upload: "\e953",
+  telephone: "\e954",
+  email: "\e955",
+  file: "\e956",
   eyeclose: "\e94d",
   eye: "\e94f",
   camera: "\e942",
@@ -171,7 +178,6 @@ $font-types: (
   savings: "\e92c",
   youtube: "\e92d",
   instagram: "\e92e",
-  bio: "\e92f",
 );
 
 @each $type, $value in $font-types {
