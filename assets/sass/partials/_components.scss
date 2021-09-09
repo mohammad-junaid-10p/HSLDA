@@ -397,14 +397,19 @@
         position: relative;
         overflow: hidden;
         margin-bottom: rem(15);
-        .icon-files {
-            font-size: rem(28);
+        .icon-file {
+            font-size: rem(23);
             color: $success-300;
         }
         .icon-cross {
             font-size: rem(12);
             color: $gray-500;
         }
+    }
+    &-name {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
     }
     &-progress {
         position: absolute;
@@ -424,9 +429,121 @@
 }
 
 .wizard-send-btn {
-    .icon-chevron-up {
+    i {
         transform: rotate(90deg);
         display: inline-block;
         margin-left: rem(6);
     }
+}
+
+.wizard-contact {
+    &-textarea {
+        height: rem(290);
+        padding: rem(12);
+        resize: none;
+    }
+}
+
+.wizard-options {
+
+    &-item {
+        position: relative;
+      
+      label {
+          min-height: rem(60);
+          width: 100%;
+          display: flex;
+          align-items: center;
+          border: rem(2) solid $gray-300;
+          border-radius: rem(3);
+          font-size: rem(18);
+          background-color: white;
+          color: black;
+          padding: rem(12) 0 rem(12) rem(46);
+        &::before {
+            content: "";
+            background-color: white;
+            border: rem(2) solid $gray-300;
+            border-radius: 50%;
+            cursor: pointer;
+            width: rem(24);
+            height: rem(24);
+            position: absolute;
+            left: rem(12);
+            top: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &::after {
+            content: "";
+            border: rem(4) solid white;
+            border-top: none;
+            border-right: none;
+            height: rem(7);
+            width: rem(12);
+            opacity: 0;
+            position: absolute;
+            left: rem(18);
+            top: 50%;
+            transform: translate(0, -50%) rotate(-45deg);
+          }
+      }
+      input {
+        display: none;
+        &:checked + label {
+            box-shadow: rem(0) rem(3) rem(12) rgba(black, 0.15);
+            border: rem(2) solid $success-300;
+            &::before {
+                background-color: $success-300;
+                border-color: $success-300;
+            }
+            &::after {
+                opacity: 1;
+            }
+          }
+      }
+    }
+    &-icon {
+        margin-right: rem(17);
+        margin-left: auto;
+        font-size: rem(46);
+        color: $primary;
+    }
+    &-additional {
+        color: $dark;
+        ul {
+            list-style: disc;
+        }
+    }
+    &-extra {
+        color: $dark;
+        b {
+            font-weight: 700;
+        }
+    }
+}
+
+.wizard-end {
+    &-details {
+        background-color: white;
+        border: rem(1) solid $gray-300;
+        border-radius: rem(4);
+        width: 100%;
+        padding: rem(12);
+        i {
+            font-size: rem(24);
+        }
+    }
+    &-text, &-details {
+        color: $dark;
+    }
+}
+
+.dot {
+    display: inline-block;
+    width: rem(3);
+    height: rem(3);
+    border-radius: 50%;
+    background: $gray-400;
+    margin: 0 rem(5) rem(3) rem(5)
 }
