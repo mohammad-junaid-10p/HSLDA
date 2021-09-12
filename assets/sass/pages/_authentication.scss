@@ -1,0 +1,24 @@
+.auth-banner {
+    width: rem(488);
+}
+
+.auth-container {
+    padding-top: rem(135);
+    min-height: calc(100vh - #{rem(80)});
+}
+
+.auth-form {
+    width: rem(479);
+    .nav-item {
+        flex: unset;
+        .nav-link {
+            padding: rem(25) rem(35);
+            h2 {
+                font-size: rem(28);
+            }
+            &.active {
+                color: $primary;
+            }
+        }
+    }
+}
