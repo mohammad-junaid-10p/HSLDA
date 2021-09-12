@@ -23,7 +23,15 @@
         cursor: pointer;
     }
 }
-
+.login-header {
+    height: rem(80);
+    border-bottom: rem(1) solid $gray-300;
+    padding: 0 rem(21);
+    background-color: white;
+    img {
+        height: rem(51);
+    }
+}
 .header-dropdown {
     .dropdown-menu {
         width: rem(170);
