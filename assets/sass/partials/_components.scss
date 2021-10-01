@@ -350,7 +350,7 @@
     margin-bottom: 0;
     margin-top: rem(-8);
     li {
-        border-bottom: 1px solid #c7c7c7;
+        border-bottom: rem(1) solid #c7c7c7;
         a {
             text-decoration: none;
         }
@@ -546,4 +546,27 @@
     border-radius: 50%;
     background: $gray-400;
     margin: 0 rem(5) rem(3) rem(5)
+}
+
+.hslda-loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background-color: rgba(white, 0.7);
+    &-container {
+        border: rem(3) solid $primary;
+        border-radius: 50%;
+        padding: rem(26);
+        height: rem(138);
+        width: rem(138);
+        img {
+            height: rem(80);
+        }
+    }
 }

@@ -12,6 +12,7 @@ $gray-200: #ebeeef;
 $gray-300: #c7cccf;
 $gray-400: #a2a9ad;
 $gray-500: #575F60;
+$gray-600: #262626;
 $border-radius: rem(3);
 $badge-font-weight: normal;
 $font-weight-bolder: 500;
@@ -53,8 +54,11 @@ $theme-colors: (
   "info": $info,
   "success": $success,
   "success-100": $success-100,
+  "success-400": $success-400,
   "gray-200": $gray-200,
   "gray-400": $gray-400,
+  "gray-500": $gray-500,
+  "gray-600": $gray-600,
   "dark": $dark,
   "black": black,
 );

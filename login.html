@@ -18,10 +18,10 @@
         <section class="main-section w-100">
           <div class="main-section-container auth-container">
             <div class="row">
-              <div class="col-6 d-flex align-items-center justify-content-center">
+              <div class="col-12 col-lg-6 align-items-start justify-content-center d-lg-flex d-none">
                 <img class="auth-banner" src="./assets/images/login-banner.png" alt="">
               </div>
-              <div class="col-6">
+              <div class="col-12 col-lg-6">
                 <div class="auth-form">
                   <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -59,42 +59,42 @@
                     >
                       <div class="hslda-card-body pt-2">
                         <form>
+                          <div class="alert-box mb-3 pb-1 flex-sm-row flex-column">
+                            <div class="alert-content mb-sm-0 mb-2 me-sm-2">
+                              <h6 class="alert-tile mb-0 text-gray-500 mb-1">
+                                No matches found.
+                              </h6>
+                              <span class="alert-text text-gray-500">
+                                <p>We’re sorry! The credentials you entered did not match an existing account. Please check your credentials or <a href="">create an account.</a></p>
+                                <p class="mb-0">For assistance please call 540-338-5600 or email info@hslda.org.</p>
+                              </span>
+                            </div>
+                          </div>
                           <div class="row g-2 mb-4">
-                            <div class="col-12">
-                              <label class="form-label">First Name*</label>
-                              <input
-                                class="form-control"
-                                aria-describedby="emailHelp"
-                              />
-                            </div>
-                            <div class="col-12">
-                              <label class="form-label">Last Name*</label>
-                              <input
-                                class="form-control"
-                                aria-describedby="emailHelp"
-                              />
-                            </div>
-                            <div class="col-12">
+                            <div class="col-12 mb-2">
                               <label class="form-label">Email (and Login)*</label>
                               <input class="form-control" placeholder="" />
                             </div>
-                            <div class="col-12">
-                              <label class="form-label">Password</label>
-                              <input class="form-control" type="password" placeholder="" />
+                            <div class="col-12 mb-2">
+                              <label class="form-label mb-0">Password</label>
+                              <div class="password-field">
+                                <input class="form-control" type="password" required="">
+                                <i class="icon-eyeclose" onclick="eyeToggle(this)"></i>
+                              </div>
                             </div>
                           </div>
-                          <div class="form-btn">
+                          <div class="align-items-center d-flex flex-column form-btn">
                             <button
                               type="submit"
-                              class="btn btn-primary w-100 mb-2"
+                              class="btn btn-primary btn-lg w-75 mb-2"
                             >
-                              Save
+                              Submit
                             </button>
                             <button
                               type="submit"
                               class="btn btn-transparent w-100"
                             >
-                              <a href="" class="">Cancel</a>
+                              <a href="" class="">Forgot password?</a>
                             </button>
                           </div>
                         </form>
@@ -106,92 +106,48 @@
                       role="tabpanel"
                     >
                       <div class="hslda-card-body pt-2">
-                        <h5 class="text-primary pb-3 mb-0">BANK ACCOUNT</h5>
                         <form>
                           <div class="row g-2 mb-4">
-                            <div class="col-12">
-                              <label class="form-label">Name on card</label>
-                              <input
-                                class="form-control"
-                                aria-describedby="emailHelp"
-                              />
-                            </div>
-                            <div class="col-12">
-                              <label class="form-label">Account type</label>
-                              <select class="form-select">
-                                <option selected>account type</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </select>
-                            </div>
-                            <div class="col-12">
-                              <label class="form-label">Account number</label>
-                              <input
-                                class="form-control"
-                                placeholder="Ex. 1234567890"
-                              />
-                            </div>
-                            <div class="col-12">
-                              <label class="form-label">Routing number</label>
-                              <input
-                                class="form-control"
-                                placeholder="Ex. 123456789"
-                              />
-                            </div>
-                          </div>
-                          <hr class="form-seprator m-0" />
-                          <h5 class="text-primary py-3 mb-0">BILLING ADDRESS</h5>
-                          <div class="row g-2 mb-4">
-                            <div class="col-12">
+                            <div class="col-12 mb-2">
                               <label class="form-label">First name</label>
                               <input
                                 class="form-control"
                                 aria-describedby="emailHelp"
                               />
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 mb-2">
                               <label class="form-label">Last name</label>
                               <input class="form-control" />
                             </div>
-                            <div class="col-12">
-                              <label class="form-label">Street address</label>
+                            <div class="col-12 mb-2">
+                              <label class="form-label">Email (and Login)*</label>
                               <input class="form-control" />
                             </div>
                             <div class="col-12">
-                              <label class="form-label">City</label>
-                              <input class="form-control" />
+                              <label class="form-label mb-0">Password</label>
+                              <div class="password-field">
+                                <input class="form-control" type="password" required="">
+                                <i class="icon-eyeclose" onclick="eyeToggle(this)"></i>
+                              </div>
+                              <div class="d-flex align-items-center mt-1 mb-2">
+                                <small class="text-gray-600">Your password must be at least 8 characters long, have a mix of letters and numbers, and cannot contain your username</small>
+                              </div>
                             </div>
                             <div class="col-12">
-                              <label class="form-label">State</label>
-                              <select class="form-select">
-                                <option selected>Month</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </select>
-                            </div>
-                            <div class="col-12">
-                              <label class="form-label">Zip Code</label>
+                              <label class="form-label">Zip Code*</label>
                               <input class="form-control" />
                             </div>
-                            <div class="col-12">
-                              <label class="form-label">Country</label>
-                              <input class="form-control" />
+                            <div class="col-12 d-flex align-items-start">
+                              <input class="form-check-input mt-0 me-2 auth-checkbox" type="checkbox" value="">
+                              <label for="" class="auth-checkbox-label"><small class="text-gray-500 d-block"><b class="text-primary">Email Opt In:</b> I agree to receive emails from HSLDA and I would like to send all donations to Abigail Cook </small></label>
                             </div>
                           </div>
-                          <div class="form-btn">
+                          <div class="align-items-center d-flex flex-column form-btn">
                             <button
                               type="submit"
-                              class="btn btn-primary w-100 mb-2"
+                              class="btn btn-primary btn-lg w-75 mb-2"
                             >
-                              Save
-                            </button>
-                            <button
-                              type="submit"
-                              class="btn btn-transparent w-100"
-                            >
-                              <a href="" class="">Cancel</a>
+                              Create Account
                             </button>
                           </div>
                         </form>
